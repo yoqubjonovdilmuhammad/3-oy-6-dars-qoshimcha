@@ -1,0 +1,205 @@
+/* roboto-condensed-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-condensed-v25-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-condensed-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-condensed-v25-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+} /* bebas-neue-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/bebas-neue-v10-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+    font-size: 1.6rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Bebas Neue", sans-serif;
+}
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.wrapper {
+  display: flex;
+  flex-grow: 1;
+}
+.hero {
+  width: 50%;
+  height: 100%;
+  background-image: url("../img/hero.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero__wrapper {
+  width: 100%;
+  max-width: 285px;
+}
+.hero__title {
+  color: #fff;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  margin-bottom: 2.4rem;
+}
+.hero__btn {
+  border: 0;
+  background-color: #1e90ff;
+  padding: 1.2rem 2.4rem;
+  font-family: inherit;
+  transition: 0.3s;
+}
+.hero__btn:hover {
+  background-color: rgba(30, 144, 255, 0.8);
+}
+
+.hero__btn__inner-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.hero__btn__image::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/star.png");
+  background-repeat: no-repeat;
+  background-position: cente;
+}
+.hero__btn__text {
+  letter-spacing: 2px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.main {
+  width: 50%;
+  height: 100%;
+  padding: 5.4rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 0.8;
+  letter-spacing: 1px;
+}
+
+.main__title {
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28.8px;
+  letter-spacing: 2px;
+  color: #222222;
+  margin-bottom: 24px;
+}
+
+.main__div {
+  border: 1px solid #999999;
+  width: 492px;
+  margin-bottom: 24px;
+}
+
+.main__list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 23px;
+}
+
+.main__item {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.main__item-img {
+  border-radius: 4px;
+  width: 160px;
+  height: 90px;
+}
+
+.main__item-content {
+  padding: 16px;
+}
+
+.main__item-title {
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.6px;
+  letter-spacing: 2px;
+  color: #222222;
+  margin-bottom: 4px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.main__item-title:hover {
+  color: #1e90ff;
+}
+
+.main__item-title:active {
+  opacity: 0.6;
+}
+
+.main__btn {
+  background-color: #1e90ff;
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16.41px;
+  font-family: "Roboto Condensed";
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.main__btn:hover {
+  opacity: 0.8;
+}
+
+.main__btn:active {
+  opacity: 0.6;
+}
